@@ -1,14 +1,13 @@
 //Default Font
-
 $base-font-family:          Open Sans;
 
 
 
-$font-size-base:          	18px;
+$font-size-base:          	14px;
 $base-color: 				#868C8D;
 
 $base-line-height: 			35px;
-$base-font-weight: 			normal;
+$base-font-weight: 			300;
 
 $base-heading-color: 		#000000;
 
@@ -27,48 +26,6 @@ $yellow: 			#fff200;
 
 $color-light-blue: 		#2EBAEF;
 $dark-blue: 		#45519E;
-
-
-//Theme Color Variation
-
-//blue Combination
-$theme-blue: #6daaf1;
-$theme-dark-blue: #4b83c3;
-$theme-light-blue: #5a9dea;
-
-//Green Combination
-$theme-green: #84a956;
-$theme-light-green: #5d7b37;
-$theme-dark-green: #425a23;
-
-//Maroon Combination
-$theme-maroon: #a25353;
-$theme-light-maroon: #753535;
-$theme-dark-maroon: #421d1d;
-
-//Grey Combination
-$theme-grey: #a7a4a4;
-$theme-dark-grey: #444444;
-$theme-light-grey: #737272;
-
-//blackishblue Combination
-$theme-blackishblue: #48698c;
-$theme-dark-blackishblue: #233548;
-$theme-light-blackishblue: #31465d;
-
-
-
-$opacity-one: 		0.1;
-$opacity-two: 		0.2;
-$opacity-three: 	0.3;
-$opacity-four: 		0.4;
-$opacity-five: 		0.5;
-$opacity-six: 		0.6;
-$opacity-seven: 	0.7;
-$opacity-eight: 	0.8;
-$opacity-nine: 		0.9;
-$opacity-none: 		1;
-
 
 //Width Variation
 $full-width: 		100%;
