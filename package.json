@@ -1,0 +1,21 @@
+{
+  "name": "kolkata-west",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-fontmin": "^0.7.4",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-js-minify": "0.0.3",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+  }
+}

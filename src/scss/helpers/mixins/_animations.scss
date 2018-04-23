@@ -1,0 +1,37 @@
+// ----------------------------------------------------------------------
+
+  // Animations
+
+// ----------------------------------------------------------------------
+
+// example: @include animation('slide-down 5s 3');
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+     -moz-animation: #{$str};
+    -ms-animation: #{$str};
+     -o-animation: #{$str};
+      animation: #{$str};
+}
+
+
+//For Transition
+@mixin transition-duration($str) {
+  -webkit-transition-duration: $str;
+     -moz-transition-duration: $str;
+      -ms-transition-duration: $str;
+       -o-transition-duration: $str;
+          transition-duration: $str;
+}
+
+
+
+
+//For Rotate
+@mixin appearance($appval) {
+  -webkit-appearance: $appval;
+     -moz-appearance: $appval;
+      -ms-appearance: $appval;
+       -o-appearance: $appval;
+          appearance: $appval;
+}

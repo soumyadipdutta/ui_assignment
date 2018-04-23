@@ -1,0 +1,47 @@
+/*
+	helpers
+	--> variables
+	--> functions
+	--> mixins
+*/
+@import "helpers/variables";
+@import "helpers/mixin";
+
+
+// vendors
+@import "vendors/bootstrap";
+@import "vendors/slick/slick";
+@import "vendors/slick/slick-theme";
+@import "vendors/fontAwesome/font-awesome";
+
+/*
+	base
+	--> reset
+	--> typography
+	--> color
+*/
+@import "base/base";
+@import "base/reset";
+@import "base/typography";
+@import "base/color";
+
+/*
+	components
+	--> buttons
+	--> navigation
+
+*/
+
+@import "components/main";
+
+
+
+
+/*
+	layout
+	--> header
+	--> sidebar
+*/
+@import "layout/header";
+@import "layout/footer";
+@import "layout/sidebar";

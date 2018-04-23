@@ -1,0 +1,362 @@
+//Top Information Area
+.c-main{
+	width: 100%;
+	.c-main__left-panel{
+	    width: 100%;
+	    float: none;
+	    height: 100%;
+	    background: $dark-blue;
+	    padding-left: 15px;
+	    padding-right: 15px;
+	    @include respond-to(small){
+	    	width: 35%;
+	    	position: fixed;
+	    	padding-left: 15px;
+	    	padding-right: 0px;
+	    	top: 0;
+	    }
+	    @include respond-to(tab-mini){
+	    	padding-left: 70px;
+	    }
+	}
+	.c-main__right-panel{
+	    float: none;
+	    position: relative;
+	    .c-main__right-toppanel{
+	    	min-height: 85px;
+    		background: #EFEEEC;
+    		border-bottom: 1px solid #f1f1f1;
+    		box-shadow: 8px -1px 33px -5px #d0d0d0 inset;
+    		
+    		ul{
+    			text-align: center;
+    			@include respond-to(small){
+    				margin-top: 40px;
+    				margin-left: 24px;
+    				text-align: left;
+    			}
+    			li{
+    				display: inline-block;
+	    		    margin-right: 15px;
+    				a{
+    					font-size: 14px;
+    					padding: 4px 0;
+    				}
+    				&.active{
+    					border-bottom: 2px solid #000000;
+    				}
+    			}
+    		}
+    		.c-main__tabheader{
+
+    		}
+    		.c-main__notification{
+    			ul{
+    				text-align: right;
+    			}
+    		}
+    		@include respond-to(small){
+		    	position: fixed;
+	    		min-width: 65%;
+	    		z-index: 9;
+	    		left: 35%;
+	    		top: 0;
+		    }
+
+
+	    }
+	    .c-main__right-mainpanel{
+	    	@include respond-to(small){
+	    		margin-top: 85px;
+			    position: relative;
+			    height: 100vh;
+			    overflow: auto;
+			    display: table;
+			    width: 100%;
+	    	}
+
+	    }
+	    @include respond-to(small){
+	    	margin-left: 35%;
+	    	width: 65%;
+	    }
+	}
+}
+
+
+.c-post{
+	width: 70%;
+	float: left;
+	height: 300px;
+}
+
+.c-sidebar{
+	background: #EFEEEC;
+	width: 100%;
+	@include respond-to(small){
+    	width: 30%;
+	    height: 100%;
+	    display: table-cell;
+    }
+}
+
+
+//Tab Section
+.c-main__tabular{
+	@include respond-to(small){
+    	width: 70%;
+		display: table-cell;
+    }
+}
+
+
+//Single Feed 
+.c-feed_single{
+	padding: 25px;
+	border-bottom: 1px solid #ddd;
+	.c-feed__date{
+		p{
+		    font-size: 13px;
+		    color: #b5b5b5;
+		    line-height: 15px;
+		}
+	}
+	.c-feed__content{
+		h2{
+			font-weight: 300;
+		    font-size: 18px;
+		    line-height: 40px;
+		    color: #4e4e4e;
+		    letter-spacing: 1px;
+		    margin-bottom: 30px;
+		    @include respond-to(small){
+				margin-bottom: 15px;
+				font-size: 20px;
+			}
+			@include respond-to(tab-mini){
+				margin-bottom: 30px;
+				font-size: 24px;
+			}
+		}
+	}
+	.c-feed__comment{
+		margin-top: 15px;
+		@include respond-to(small){
+			margin-top: 0px;
+		}
+		ul{
+			
+			li{
+				display: inline-block;
+				font-size: 14px;
+				margin-right: 10px;
+				i{
+					color: #ddd;
+					transition-duration: 500ms;
+					&:hover{
+						color: #000;
+						transition-duration: 500ms;
+					}
+				}
+				@include respond-to(small){
+					margin-right: 5px;
+				}
+				@include respond-to(tab-mini){
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+
+	.c-recent__single{
+		margin-bottom: 0;
+		.c-recent__desc{
+			span{
+				font-size: 12px;
+			    font-weight: 300;
+			    line-height: 20px;
+			}
+		}
+	}
+}
+
+
+
+//Create Event
+.c-create{
+	background: $color-light-blue;
+	box-shadow: 0 0 50px -10px #2d2d2d;
+	width: 100%;
+	.c-create__avater{
+		
+		padding: 0 0;
+		figure{
+			width: 100%;
+		    height: 84px;
+		    overflow: hidden;
+		    img{
+		    	height: 100%;
+		    	width: auto;
+		    }
+		} 
+		@include respond-to(small){
+			width: 74px;
+		}
+	}
+	.c-create__editor{
+		textarea{
+			width: 100%;
+		    height: 78px;
+		    background: transparent;
+		    border: none;
+		    resize: none;
+		    outline: none;
+		    color: #A8DFFD;
+		    font-size: 16px;
+		    text-align: left;
+		    padding-top: 47px;
+		    font-weight: 300;
+		    margin-left: 10px;
+		    overflow: hidden;
+		    @include respond-to(small){
+		        padding-top: 25px;
+		    }
+		    &::placeholder {
+		    	color: #A8DFFD;
+		    	
+		    }
+		}
+
+		@include respond-to(small){
+	        width: 70%;
+	    }
+	    @include respond-to(tab-mini){
+	        width: 69%;
+	    }
+	}
+}
+
+.c-feed__replay{
+	background: #efeeec;
+	margin-left: -25px;
+	margin-right: -25px;
+	margin-top: 15px;
+    box-shadow: 0 0 25px 0 #d6d6d6 inset;
+    margin-bottom: -25px;
+	.c-feed__linkarea{
+		border-top: 1px solid #e2e2e2;
+		font-size: 14px;
+		padding: 2px 25px;
+		a{
+			font-weight: 300;
+		}
+	}
+	.c-feed__author{
+		padding: 10px 25px;
+	}
+}
+
+
+
+.c-datefilter{
+	
+	.c-datefilter__top{
+		ul{
+			margin-top: 40px;
+			li{
+				display: inline-block;
+				font-size: 14px;
+    			margin-right: 15px;
+    			a{
+    				color: #8F93CC;
+    			}
+			}
+		}
+	}
+
+	.c-datefilter__contentarea{
+		.c-datefilter__large-date{
+			padding: 40px 0;
+			h1{
+				color: #8F93CC;
+				font-weight: 300;
+			}
+			h2{
+				font-size: 40px;
+				color: #ffffff;
+				font-weight: 300;
+			}
+		}
+
+		button{
+			&.slick-prev{
+				right: 65px;
+				left: auto;
+				height: 18px;
+				width: 18px;
+				top: 125px;
+				border-top: 1px solid #8F93CC;
+				border-right: 1px solid #8F93CC;
+				transform: rotate(-135deg);
+				z-index: 99;
+				&:before{
+					content: ' ';
+				}
+			}
+			&.slick-next{
+				right: 50px;
+				height: 18px;
+				width: 18px;
+				top: 125px;
+				border-top: 1px solid #8F93CC;
+				border-right: 1px solid #8F93CC;
+				transform: rotate(45deg);
+				&:before{
+					content: ' ';
+				}
+			}
+		}
+	}
+
+	.c-datefilter__schedule{
+		ul{
+			li{
+				display: block;
+				margin-bottom: 15px;
+				span{
+					font-size: 12px;
+					color: #7883BC;
+				}
+				p{
+					font-size: 16px;
+					color: #E5F0FF;
+					line-height: 25px;
+				}
+			}
+		}
+	}
+}
+
+
+.c-main__notification{
+	width: 200px;
+	float: right;
+}
+
+
+.follow-area{
+	.c-recent__image{
+		width: 55px;
+		figure{
+			height: 55px;
+    		width: 55px;
+		}
+	}
+	.c-recent__desc{
+		width: 64%;
+		span{
+			font-size: 12px;
+			font-weight: 300;
+		}
+	}
+}

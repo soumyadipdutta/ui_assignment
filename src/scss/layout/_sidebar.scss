@@ -1,0 +1,72 @@
+//Sidebar
+
+article{
+    padding: 25px;
+    h3{
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #9A9997;
+        font-weight: 600;
+        margin: 0 0 20px;
+        @include respond-to(small){
+            margin: 25px 0 20px;
+        } 
+    }
+
+    .c-recent__single{
+        text-align: center;
+
+    }
+
+    .c-recent__desc{
+        width: 69%;
+        @include respond-to(small){
+            width: 100%;
+        }
+        @include respond-to(tab-mini){
+            width: 69%;
+            text-align: left;
+        }
+    }
+
+
+    @include respond-to(small){
+        padding: 0 15px;
+    }  
+    @include respond-to(tab-mini){
+        padding: 0 25px;
+    } 
+}
+
+
+
+.c-recent__single{
+    margin-bottom: 20px;
+}
+.c-recent__image{
+    width: 45px;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+    figure{
+        height: 45px;
+        width: 45px;
+        overflow: hidden;
+        border-radius: 50%;
+        img{
+            max-width: 100%;
+        }
+    }
+}
+.c-recent__desc{
+    width: 69%;
+    display: inline-block;
+    vertical-align: middle;
+    p{
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+    
+
+   

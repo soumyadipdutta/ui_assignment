@@ -1,0 +1,61 @@
+
+//Global Style
+
+*{ padding: 0; margin: 0;}
+
+div{
+	box-sizing: border-box;
+}
+
+//Panel Alignment
+.c-alignLeft{ float: left; }
+.c-alignCenter{ margin: 0 auto; }
+.c-alignRight{ float: right; }
+
+
+//Text Alignment
+.c-text--alignleft{ text-align: left; }
+.c-text--aligncenter{ text-align: center; }
+.c-text--alignRight{ text-align: right; }
+
+
+.clearfix:before,
+.clearfix:after{
+	content: " ";
+	display: block;
+	clear: both;
+    width: 100%;
+}
+
+ul{list-style-type: none;}
+input{outline: none;}
+
+p{
+	a{
+		font-weight: 600;
+		line-height: 20px;
+	}
+}
+
+button{
+	outline: none;
+}
+
+.container{
+	width: 100%;
+	margin: 0 auto;
+	@include respond-to(small) {
+		width: 100%;
+	}
+	@include respond-to(tab-mini){
+		width: 1024px;
+	}
+}
+
+.clearfix:before,
+.clearfix:before{
+	content: " ";
+	clear: both;
+    width: 100%;
+    display: block;
+}

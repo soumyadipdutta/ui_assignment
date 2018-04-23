@@ -1,0 +1,36 @@
+
+
+@mixin header-icon($position, $padding) {
+	position: $position;
+	padding: $padding;
+}
+
+header{
+	min-height: 140px;
+}
+
+.c-logo{
+	margin-top: 25px;
+	a{
+		img{
+			width: 100%;
+			@include respond-to(small) {
+	           width: auto;
+	        }
+		}
+	}
+}
+
+
+
+.o-header{
+	.col-md-6{
+		float: none;
+		text-align: center;
+		@include respond-to(small) {
+            float: left;
+			text-align: left;
+        }
+	}
+}
+
